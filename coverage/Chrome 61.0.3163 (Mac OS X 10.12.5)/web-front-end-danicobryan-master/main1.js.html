@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for web-front-end-danicobryan-master/main1.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">web-front-end-danicobryan-master/</a> main1.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/52</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">23.53% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/51</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+&nbsp;
+// Yes, this is a "global." But it is a single entry point for all of the code in the module,
+// and in its role as the overall controller code of the page, this is one of the acceptable
+// uses for a [single!] top-level name.
+//
+// Module managers address even this issue, for web apps of sufficient complexity.
+(() =&gt; {
+    window.ArtistSearchController = {
+        init: () =&gt; {
+            let searchButton = $("#artist-search-button");
+            let searchTerm = $("#artist-search-term");
+            let result = $("#albums-show-container");
+            let artistArray = [];
+            let apiKey = "6e34097f13bbe5241616345f796f7939";
+&nbsp;
+            $(result).hide();
+&nbsp;
+            $(searchTerm).keyup(<span class="fstat-no" title="function not covered" >function(event) {</span>
+<span class="cstat-no" title="statement not covered" >                event.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >                if (event.keyCode === 13) {</span>
+<span class="cstat-no" title="statement not covered" >                    $(searchButton).click();</span>
+                }
+            });
+&nbsp;
+&nbsp;
+            searchButton.click(() =&gt;
+<span class="cstat-no" title="statement not covered" >                $.getJSON("http://api.musixmatch.com/ws/1.1/chart.artists.get", {</span>
+                    apikey: apiKey,
+                    country: searchTerm.val(),
+                    page_size: 10,
+                    page: 1,
+                    format: "jsonp",
+                    callback: "callback"
+                }, <span class="fstat-no" title="function not covered" >function(data){</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    $('html,body').animate({</span>
+                        scrollTop: $("#result").offset().top
+                    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    $(result).show().html("");</span>
+<span class="cstat-no" title="statement not covered" >                    artistArray = data.message.body.artist_list;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    let showTitle = `</span>
+                        &lt;h1 class="text-center"&gt;Top 10 Artists&lt;/h1&gt;
+                    `;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    $(result).append(showTitle);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                    for (let i = 0; i &lt; artistArray.length; i++){</span>
+<span class="cstat-no" title="statement not covered" >                        let name = artistArray[i].artist.artist_name;</span>
+<span class="cstat-no" title="statement not covered" >                        let artistID = artistArray[i].artist.artist_id;</span>
+<span class="cstat-no" title="statement not covered" >                        let nameStripped = name.match(/\w/g).join("");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        let show = `</span>
+                            &lt;div class="artist-data"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class ="col-md-12"&gt;
+                                        &lt;h3&gt; ${i + 1}. ${name} &lt;/h3&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-md-6"&gt;
+                                        &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+                                        &lt;iframe id="ytplayer" type="text/html" width="560" height="315"
+                                        src="https://www.youtube.com/embed?listType=search&amp;list=${nameStripped}"
+                                        frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="col-md-6"&gt;
+                                        &lt;h4&gt;Latest Albums&lt;/h4&gt;
+                                        &lt;div class="row" id="${artistID}"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+&nbsp;
+                            &lt;/div&gt;
+                        `;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        $(result).append(show);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                        $.getJSON("http://api.musixmatch.com/ws/1.1/artist.albums.get", {</span>
+                            apikey: apiKey,
+                            artist_id: artistID,
+                            s_release_date: "desc",
+                            g_album_name: 1,
+                            page_size: 3,
+                            page: 1,
+                            format: "json"
+&nbsp;
+                        }, <span class="fstat-no" title="function not covered" >function(data){</span>
+<span class="cstat-no" title="statement not covered" >                            let albumResult = $("#" + artistID);</span>
+<span class="cstat-no" title="statement not covered" >                            let albumArray = data.message.body.album_list;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                            for (let i = 0; i &lt; albumArray.length; i++){</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                let albumName = albumArray[i].album.album_name;</span>
+<span class="cstat-no" title="statement not covered" >                                let albumID = albumArray[i].album.album_id;</span>
+&nbsp;
+&nbsp;
+&nbsp;
+                                // console.log(name + ": " + albumName);
+<span class="cstat-no" title="statement not covered" >                                let showAlbum = `</span>
+                                    &lt;div id="${albumID}" class="col-md-4 text-center"&gt;
+&nbsp;
+                                    &lt;/div&gt;
+                                `;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                $(albumResult).append(showAlbum);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                $.getJSON("http://api.musixmatch.com/ws/1.1/album.get", {</span>
+                                    apikey: apiKey,
+                                    album_id: albumID,
+                                    format: "json"
+                                }, <span class="fstat-no" title="function not covered" >function(data){</span>
+<span class="cstat-no" title="statement not covered" >                                    let albumCoverArt = data.message.body.album.album_coverart_100x100;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                    let albumPhotoResult = $("#" + albumID);</span>
+<span class="cstat-no" title="statement not covered" >                                    let albumRating = data.message.body.album.album_rating;</span>
+<span class="cstat-no" title="statement not covered" >                                    let starRating = stars(albumRating);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                    let showAlbumPhoto = `</span>
+                                        &lt;img src="${albumCoverArt}"&gt;&lt;/img&gt;
+                                        &lt;p&gt;Rating: ${starRating}&lt;/p&gt;
+                                        &lt;h6&gt; ${albumName} &lt;/h6&gt;
+                                    `;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                                    $(albumPhotoResult).append(showAlbumPhoto);</span>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+                                });
+                            }
+                        });
+&nbsp;
+                    }
+                })
+&nbsp;
+            );
+&nbsp;
+            searchTerm.bind("input", () =&gt; searchButton.prop("disabled", !searchTerm.val()));
+&nbsp;
+            let stars = <span class="fstat-no" title="function not covered" >function(rating){</span>
+<span class="cstat-no" title="statement not covered" >                rating = Math.round(rating / 20);</span>
+<span class="cstat-no" title="statement not covered" >                switch (rating){</span>
+                case 5:
+<span class="cstat-no" title="statement not covered" >                    return "★★★★★";</span>
+                case 4:
+<span class="cstat-no" title="statement not covered" >                    return "★★★★";</span>
+                case 3:
+<span class="cstat-no" title="statement not covered" >                    return "★★★";</span>
+                case 2:
+<span class="cstat-no" title="statement not covered" >                    return "★★";</span>
+                case 1:
+<span class="cstat-no" title="statement not covered" >                    return "★";</span>
+                case 0:
+<span class="cstat-no" title="statement not covered" >                    return "";</span>
+                case undefined:
+<span class="cstat-no" title="statement not covered" >                    return "n/a";</span>
+                }
+            };
+&nbsp;
+        }
+    };
+&nbsp;
+&nbsp;
+&nbsp;
+})();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 02 2017 16:57:41 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

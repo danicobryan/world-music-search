@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.full-page-image {
+    /* The image used */
+    background-image: url("https://www.walldevil.com/wallpapers/a87/abstract-wallpaper-music-headphones-world-images.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.center-page-caption{
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.center-page-caption h1,
+.center-page-caption h2,
+.center-page-caption h3,
+.center-page-caption h4,
+.center-page-caption p{
+  color: white;
+}
+
+.center-page-caption h1{
+  font-size: 350%;
+}
+
+.search-results{
+  padding-top: 50px;
+}
+
+.artist-data{
+  padding-top: 30px;
+  padding-bottom: 70px;
+  border-style: none none solid none;
+  border-color: grey;
+  border-width: thin;
+}
+
+.artist-data h3{
+  margin-top: 50px;
+  padding-bottom:20px;
+}
+
+.artist-data img{
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+.embed-responsive{
+  margin-bottom: 50px;
+}
+
+.artist-data i {
+  height: 52px;
+  width: 52px;
+  padding: 10px;
+  font-size: 60px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  padding-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+
+}

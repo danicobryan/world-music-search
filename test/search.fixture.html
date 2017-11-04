@@ -1,0 +1,25 @@
+<!--
+    Compare the fixture to the actual web page. Note how the fixture _distills_ the content to just the essential
+    elements for the app. This is why they are copies. The web page can be laid out or redesigned as much as you like,
+    but as long as the elements remain the same, this fixture will remain valid.
+
+    Of course, if the functionality changes to the point that the controller JavaScript needs to also change, then the
+    fixture would have to be revised.
+-->
+
+
+
+<div class="container full-width">
+  <h1>Explore The World's Music</h1>
+  <p>Search Every Country's Top Artists and Discover New Music!</p>
+  <div class="form-group mt-3">
+    <input type="text" class="form-control" id="artist-search-term" placeholder="Enter a country e.g. &quot;United States&quot;">
+  </div>
+  <div class="form-group">
+    <button id="artist-search-button" class="btn btn-primary" href="#result" disabled>Search</button>
+  </div>
+</div>
+
+<div id="result" class="container">
+  <div id="albums-show-container" class="search-results"></div>
+</div>
