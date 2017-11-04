@@ -1,6 +1,6 @@
 # World Music Search
 
-This web app uses the [Musixmatch API](https://api.giphy.com) to search for any country and display the top 10 music artists in the country as well as popular albums.
+This web app uses the [Musixmatch API](https://developer.musixmatch.com) to search for any country and display the top 10 music artists in the country as well as popular albums.
 
 To simply run the web app, just run a web server at this folder’s location. Python’s `SimpleHTTPServer` does the job just fine, for example:
     $ python -m SimpleHTTPServer
